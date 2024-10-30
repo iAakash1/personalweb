@@ -3,73 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aakash Jawle - Personal Website</title>
+    <title>Aakash's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="pccoe-logo.jpg" alt="PCCOE Logo" class="logo">
-            <h1>Aakash Jawle</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Aakash, a 2nd-year student at PCCOE, passionate about technology and constantly expanding my skill set.</p>
     </header>
-
-    <section id="home" class="section home">
-        <div class="content">
-            <h2>Hello, I'm Aakash Jawle</h2>
-            <p>A passionate learner, aspiring software engineer, and a student at PCCOE. I am eager to leverage my skills in technology to make a meaningful impact.</p>
-            <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
-        </div>
-    </section>
-
-    <section id="about" class="section about">
+    
+    <section id="about">
         <h2>About Me</h2>
-        <p>Welcome! I’m Aakash Jawle, a second-year Computer Engineering student at PCCOE, Pune. As a quick learner and adaptive thinker, I have a strong foundation in programming and problem-solving skills, which are essential in the tech industry. My journey in tech is driven by a desire to build innovative solutions that can simplify complex processes and improve lives.</p>
-        <p>I excel in C++, Python, and Data Structures & Algorithms (DSA). Beyond technical skills, I’m proactive, highly organized, and continuously seeking new ways to enhance my knowledge and keep up with industry trends. I’m excited to connect with like-minded professionals and explore new opportunities in software development and beyond.</p>
+        <p>I am a quick learner and adaptable to new environments. My skills include C++, Python, and DSA. I am always eager to enhance my technical abilities and collaborate on meaningful projects.</p>
+        <img src="pccoe-logo.jpg" alt="PCCOE Logo" class="logo">
     </section>
 
-    <section id="skills" class="section skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <img src="c++.png" alt="C++ Icon">
-                <h3>C++</h3>
-                <p>Strong foundation in object-oriented programming and efficient problem-solving techniques.</p>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="icons">
+            <div class="icon">
+                <img src="c++.png" alt="C++ Icon" class="skill-icon">
+                <p>C++</p>
             </div>
-            <div class="skill">
-                <img src="python.png" alt="Python Icon">
-                <h3>Python</h3>
-                <p>Experienced in Python for data visualization, data analysis, and building quick prototypes.</p>
+            <div class="icon">
+                <img src="python-logo.jpg" alt="Python Logo" class="skill-icon">
+                <p>Python</p>
             </div>
-            <div class="skill">
-                <img src="dsa.png" alt="DSA Icon">
-                <h3>Data Structures & Algorithms</h3>
-                <p>Deep understanding of DSA with hands-on experience in applications that improve code efficiency and performance.</p>
-            </div>
-            <div class="skill">
-                <img src="webdev.png" alt="Web Development Icon">
-                <h3>Web Development</h3>
-                <p>Proficient in HTML, CSS, and JavaScript, capable of creating responsive and visually appealing websites.</p>
+            <div class="icon">
+                <img src="html.png" alt="HTML Logo" class="skill-icon">
+                <p>HTML</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
