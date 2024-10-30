@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aakash's Personal Website</title>
+    <title>Aakash Jawle's Personal Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -20,14 +21,36 @@
 
     <section id="home" class="section home">
         <div class="content">
-            <h2>Welcome to My Personal Website</h2>
-            <p>Exploring ideas, sharing experiences, and connecting with the world.</p>
+            <h2>Hello, I'm Aakash Jawle</h2>
+            <p>A passionate learner and aspiring software engineer from PCCOE. Currently a 2nd-year student, I'm a quick adapter who loves challenges and is eager to grow in the field of technology.</p>
+            <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
         </div>
     </section>
 
     <section id="about" class="section about">
         <h2>About Me</h2>
-        <p>Brief bio or description goes here.</p>
+        <p>Hi! I’m Aakash, currently a second-year student at PCCOE. I'm a smart learner and quick adapter, constantly exploring the world of tech and committed to growing my skill set.</p>
+    </section>
+
+    <section id="skills" class="section skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="c++.png" alt="C++ Icon">
+                <h3>C++</h3>
+                <p>Strong foundation in object-oriented programming and efficient problem-solving techniques.</p>
+            </div>
+            <div class="skill">
+                <img src="python.png" alt="Python Icon">
+                <h3>Python</h3>
+                <p>Experienced in Python for data visualization, data analysis, and web development basics.</p>
+            </div>
+            <div class="skill">
+                <img src="dsa.png" alt="DSA Icon">
+                <h3>Data Structures & Algorithms</h3>
+                <p>Solid grasp of algorithms and data structures with hands-on experience in DSA applications.</p>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="section contact">
