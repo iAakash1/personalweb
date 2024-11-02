@@ -3,39 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aakash's Portfolio</title>
+    <title>Your Name | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Aakash, a 2nd-year student at PCCOE, passionate about technology and constantly expanding my skill set.</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Your Name</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Animated Headline -->
+    <header id="hero">
+        <div class="hero-text">
+            <h2 class="headline-animation">Welcome to My Personal Website</h2>
+            <p>I'm a Computer Engineering student with a focus on web development, data science, and software engineering.</p>
+            <a href="#projects" class="cta-button">View My Projects</a>
+        </div>
     </header>
-    
-    <section id="about">
+
+    <!-- About Section with Scroll Animation -->
+    <section id="about" class="fade-in">
         <h2>About Me</h2>
-        <p>I am a smart learner and quick adapter who thrives on tackling challenges in technology. Currently, I am proficient in <strong>C++</strong>, <strong>Python</strong>, and <strong>Data Structures and Algorithms (DSA)</strong>. My approach is hands-on, and I enjoy engaging with new projects and improving my skills continuously.</p>
-        <img src="/public/pccoe-logo.jpg" alt="PCCOE Logo" class="logo">
+        <p>Briefly introduce yourself, your background, and your career goals. This section reveals as you scroll!</p>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="icons">
-            <div class="icon">
-                <img src="/public/c++.png" alt="C++ Icon" class="skill-icon">
-                <p>C++</p>
+    <!-- Projects Section with Modal Popup -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <!-- Sample Project Cards -->
+            <div class="project-card" onclick="openProjectModal('project1')">
+                <img src="path/to/project-image.jpg" alt="Project Image">
+                <h3>Project Title</h3>
             </div>
-            <div class="icon">
-                <img src="/public/python-logo.jpg" alt="Python Logo" class="skill-icon">
-                <p>Python</p>
-            </div>
-            <div class="icon">
-                <img src="/public/html.jpg" alt="HTML Logo" class="skill-icon">
-                <p>HTML</p>
+            <div class="project-card" onclick="openProjectModal('project2')">
+                <img src="path/to/project-image.jpg" alt="Project Image">
+                <h3>Project Title 2</h3>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Project Modal for Viewing Details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <h3 id="modal-title">Project Title</h3>
+            <p id="modal-description">Detailed description of the selected project will appear here.</p>
+            <a id="modal-link" href="#" target="_blank">View Project</a>
+        </div>
+    </div>
+
+    <!-- Skills Section with Hover Animation -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li class="skill-item">HTML</li>
+            <li class="skill-item">CSS</li>
+            <li class="skill-item">JavaScript</li>
+            <li class="skill-item">Python</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section with a Bounce Button -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <button onclick="openContactForm()" class="contact-button">Let's Connect!</button>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" class="back-to-top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
